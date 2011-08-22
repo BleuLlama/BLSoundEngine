@@ -1,0 +1,26 @@
+
+BLSoundEngine
+
+This is a simple sound engine for iOS games and apps.  It was originally 
+created for a game that I've been working on, off and on, for the past 
+few years.
+
+You need to make sure you include the AVFoundation.framework for music
+playback, and the AudioToolbox.framework for sound effect playback.
+
+There are basic directions in BLSoundEngine.h and a very simple
+Xcode 4 example project which shows one way to use it.
+
+This project is MIT Licesned.
+
+The sound samples and music included are Creative Commons BY-SA licensed.
+	http://creativecommons.org/licenses/by-sa/3.0/
+
+The sound effects were created by me for a project that went defunct in the 
+mid 1990s.
+
+--------------------------------------------------------------------------------
+Current status:
+ - need to create the demo project
+ - need to add the sound effects
+ - need to move the structures into the demo project, rather than hardcoded
