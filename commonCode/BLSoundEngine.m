@@ -5,43 +5,49 @@
 //  Copyright 2010,2011 UmlautLlama.com All rights reserved.
 //
 
-// v1.1 - 2011-Aug-19 - Moved sound and song filenames into structs
-// v1.0 - 2010-Jun-18 - Initial version
 
+// Copyright (C) 2011 by Scott Lawrence
+// (MIT License)
+// 
+// Permission is hereby granted, free of charge, to any person obtaining
+// a copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to
+// permit persons to whom the Software is furnished to do so, subject
+// to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be
+// included in all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+// ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+// CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "BLSoundEngine.h"
 
 NSString *SE_PreloadComplete = @"SoundEngine Preload Complete";
 
 
-BLSESound sounds[8] = {
-    { kSFX_accept, @"accept.wav" },
-    { kSFX_accept2, @"accept2.wav" },
-    { kSFX_denied, @"denied.wav" },
-    { kSFX_exclamation, @"exclmtn.wav" },
-    { kSFX_question, @"question.wav" },
-    { kSFX_clickL, @"click_l.wav" },
-    { kSFX_clickS, @"click_s.wav" },
-    { -1 }
-};
-
-BLSEMusic songs[8] = {
-    { kSONG_0, @"01 Don't Listen To Me (Instrumental).m4a" },
-    { -1 }
-};
-
 @implementation BLSoundEngine
 
 @synthesize audioPlayer;
 @synthesize songToPlay;
 
--(id) init
+-(id) initWithSounds:(BLSESound *)snds Musics:(BLSEMusic *)mus
 {
 	self = [super init];
 	if( self ) {
-		nowPlaying = kSONG_NONE;
+		nowPlaying = kSongNone;
 		musVolume = 1.0;
 		sfxVolume = 1.0;
+
+		sounds = snds;
+		musics = mus;
 	}
 	return self;
 }
@@ -158,9 +164,9 @@ BLSEMusic songs[8] = {
 
 -(NSString *)songFilenameFromIndex:(int)sid
 {
-    for( int x=0 ; songs[x].musicNumber >= 0 ; x++ ) {
-        if( songs[x].musicNumber == sid ) {
-            return songs[x].filenameInBundle;
+    for( int x=0 ; musics[x].musicNumber >= 0 ; x++ ) {
+        if( musics[x].musicNumber == sid ) {
+            return musics[x].filenameInBundle;
         }
     }
     

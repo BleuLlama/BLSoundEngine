@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EC4C0FA1408AE3B00DEAA8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC4C0F91408AE3B00DEAA8D /* UIKit.framework */; };
+		5EC4C0FC1408AE3B00DEAA8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC4C0FB1408AE3B00DEAA8D /* Foundation.framework */; };
+		5EC4C0FE1408AE3B00DEAA8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC4C0FD1408AE3B00DEAA8D /* CoreGraphics.framework */; };
+		5EC4C1041408AE3B00DEAA8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C1021408AE3B00DEAA8D /* InfoPlist.strings */; };
+		5EC4C1061408AE3B00DEAA8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4C1051408AE3B00DEAA8D /* main.m */; };
+		5EC4C10A1408AE3B00DEAA8D /* SoundEngineTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4C1091408AE3B00DEAA8D /* SoundEngineTestAppDelegate.m */; };
+		5EC4C10D1408AE3B00DEAA8D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C10B1408AE3B00DEAA8D /* MainWindow.xib */; };
+		5EC4C1101408AE3B00DEAA8D /* SoundEngineTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4C10F1408AE3B00DEAA8D /* SoundEngineTestViewController.m */; };
+		5EC4C1131408AE3B00DEAA8D /* SoundEngineTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C1111408AE3B00DEAA8D /* SoundEngineTestViewController.xib */; };
+		5EC4C11A1408AF8100DEAA8D /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C1191408AF8100DEAA8D /* image.png */; };
+		5EC4C11C1408AF8300DEAA8D /* image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C11B1408AF8300DEAA8D /* image@2x.png */; };
+		5EC4C1211408B1EA00DEAA8D /* BLSoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4C11F1408B1EA00DEAA8D /* BLSoundEngine.m */; };
+		5EC4C16714098A6B00DEAA8D /* Do You Like Cheese.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C12914098A6B00DEAA8D /* Do You Like Cheese.m4a */; };
+		5EC4C16814098A6B00DEAA8D /* Gremlin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C12A14098A6B00DEAA8D /* Gremlin.mp3 */; };
+		5EC4C18314098A6B00DEAA8D /* convertit.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C14714098A6B00DEAA8D /* convertit.sh */; };
+		5EC4C18414098A6B00DEAA8D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C14814098A6B00DEAA8D /* LICENSE.txt */; };
+		5EC4C19814098A6B00DEAA8D /* accept.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C16014098A6B00DEAA8D /* accept.wav */; };
+		5EC4C19914098A6B00DEAA8D /* accept2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C16114098A6B00DEAA8D /* accept2.wav */; };
+		5EC4C19A14098A6B00DEAA8D /* click_l.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C16214098A6B00DEAA8D /* click_l.wav */; };
+		5EC4C19B14098A6B00DEAA8D /* click_s.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C16314098A6B00DEAA8D /* click_s.wav */; };
+		5EC4C19C14098A6B00DEAA8D /* denied.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C16414098A6B00DEAA8D /* denied.wav */; };
+		5EC4C19D14098A6B00DEAA8D /* exclmtn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C16514098A6B00DEAA8D /* exclmtn.wav */; };
+		5EC4C19E14098A6B00DEAA8D /* question.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4C16614098A6B00DEAA8D /* question.wav */; };
+		5EC4C1A414098C4100DEAA8D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC4C1A214098C4100DEAA8D /* AudioToolbox.framework */; };
+		5EC4C1A514098C4100DEAA8D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC4C1A314098C4100DEAA8D /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EC4C0F51408AE3B00DEAA8D /* SoundEngineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEngineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC4C0F91408AE3B00DEAA8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5EC4C0FB1408AE3B00DEAA8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5EC4C0FD1408AE3B00DEAA8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5EC4C1011408AE3B00DEAA8D /* SoundEngineTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundEngineTest-Info.plist"; sourceTree = "<group>"; };
+		5EC4C1031408AE3B00DEAA8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EC4C1051408AE3B00DEAA8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EC4C1071408AE3B00DEAA8D /* SoundEngineTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundEngineTest-Prefix.pch"; sourceTree = "<group>"; };
+		5EC4C1081408AE3B00DEAA8D /* SoundEngineTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundEngineTestAppDelegate.h; sourceTree = "<group>"; };
+		5EC4C1091408AE3B00DEAA8D /* SoundEngineTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundEngineTestAppDelegate.m; sourceTree = "<group>"; };
+		5EC4C10C1408AE3B00DEAA8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5EC4C10E1408AE3B00DEAA8D /* SoundEngineTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundEngineTestViewController.h; sourceTree = "<group>"; };
+		5EC4C10F1408AE3B00DEAA8D /* SoundEngineTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundEngineTestViewController.m; sourceTree = "<group>"; };
+		5EC4C1121408AE3B00DEAA8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SoundEngineTestViewController.xib; sourceTree = "<group>"; };
+		5EC4C1191408AF8100DEAA8D /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		5EC4C11B1408AF8300DEAA8D /* image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image@2x.png"; sourceTree = "<group>"; };
+		5EC4C11E1408B1EA00DEAA8D /* BLSoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSoundEngine.h; sourceTree = "<group>"; };
+		5EC4C11F1408B1EA00DEAA8D /* BLSoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSoundEngine.m; sourceTree = "<group>"; };
+		5EC4C12914098A6B00DEAA8D /* Do You Like Cheese.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Do You Like Cheese.m4a"; sourceTree = "<group>"; };
+		5EC4C12A14098A6B00DEAA8D /* Gremlin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gremlin.mp3; sourceTree = "<group>"; };
+		5EC4C14714098A6B00DEAA8D /* convertit.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convertit.sh; sourceTree = "<group>"; };
+		5EC4C14814098A6B00DEAA8D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		5EC4C16014098A6B00DEAA8D /* accept.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = accept.wav; sourceTree = "<group>"; };
+		5EC4C16114098A6B00DEAA8D /* accept2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = accept2.wav; sourceTree = "<group>"; };
+		5EC4C16214098A6B00DEAA8D /* click_l.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click_l.wav; sourceTree = "<group>"; };
+		5EC4C16314098A6B00DEAA8D /* click_s.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click_s.wav; sourceTree = "<group>"; };
+		5EC4C16414098A6B00DEAA8D /* denied.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = denied.wav; sourceTree = "<group>"; };
+		5EC4C16514098A6B00DEAA8D /* exclmtn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = exclmtn.wav; sourceTree = "<group>"; };
+		5EC4C16614098A6B00DEAA8D /* question.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = question.wav; sourceTree = "<group>"; };
+		5EC4C1A214098C4100DEAA8D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5EC4C1A314098C4100DEAA8D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EC4C0F21408AE3B00DEAA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC4C0FA1408AE3B00DEAA8D /* UIKit.framework in Frameworks */,
+				5EC4C0FC1408AE3B00DEAA8D /* Foundation.framework in Frameworks */,
+				5EC4C0FE1408AE3B00DEAA8D /* CoreGraphics.framework in Frameworks */,
+				5EC4C1A414098C4100DEAA8D /* AudioToolbox.framework in Frameworks */,
+				5EC4C1A514098C4100DEAA8D /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EC4C0EA1408AE3A00DEAA8D = {
+			isa = PBXGroup;
+			children = (
+				5EC4C11B1408AF8300DEAA8D /* image@2x.png */,
+				5EC4C1191408AF8100DEAA8D /* image.png */,
+				5EC4C12714098A6B00DEAA8D /* SampleAudio */,
+				5EC4C0FF1408AE3B00DEAA8D /* SoundEngineTest */,
+				5EC4C0F81408AE3B00DEAA8D /* Frameworks */,
+				5EC4C0F61408AE3B00DEAA8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EC4C0F61408AE3B00DEAA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C0F51408AE3B00DEAA8D /* SoundEngineTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EC4C0F81408AE3B00DEAA8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C1A214098C4100DEAA8D /* AudioToolbox.framework */,
+				5EC4C1A314098C4100DEAA8D /* AVFoundation.framework */,
+				5EC4C0F91408AE3B00DEAA8D /* UIKit.framework */,
+				5EC4C0FB1408AE3B00DEAA8D /* Foundation.framework */,
+				5EC4C0FD1408AE3B00DEAA8D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EC4C0FF1408AE3B00DEAA8D /* SoundEngineTest */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C11D1408B1EA00DEAA8D /* commonCode */,
+				5EC4C1081408AE3B00DEAA8D /* SoundEngineTestAppDelegate.h */,
+				5EC4C1091408AE3B00DEAA8D /* SoundEngineTestAppDelegate.m */,
+				5EC4C10B1408AE3B00DEAA8D /* MainWindow.xib */,
+				5EC4C10E1408AE3B00DEAA8D /* SoundEngineTestViewController.h */,
+				5EC4C10F1408AE3B00DEAA8D /* SoundEngineTestViewController.m */,
+				5EC4C1111408AE3B00DEAA8D /* SoundEngineTestViewController.xib */,
+				5EC4C1001408AE3B00DEAA8D /* Supporting Files */,
+			);
+			path = SoundEngineTest;
+			sourceTree = "<group>";
+		};
+		5EC4C1001408AE3B00DEAA8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C1011408AE3B00DEAA8D /* SoundEngineTest-Info.plist */,
+				5EC4C1021408AE3B00DEAA8D /* InfoPlist.strings */,
+				5EC4C1051408AE3B00DEAA8D /* main.m */,
+				5EC4C1071408AE3B00DEAA8D /* SoundEngineTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EC4C11D1408B1EA00DEAA8D /* commonCode */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C11E1408B1EA00DEAA8D /* BLSoundEngine.h */,
+				5EC4C11F1408B1EA00DEAA8D /* BLSoundEngine.m */,
+			);
+			name = commonCode;
+			path = ../../commonCode;
+			sourceTree = "<group>";
+		};
+		5EC4C12714098A6B00DEAA8D /* SampleAudio */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C12814098A6B00DEAA8D /* Music */,
+				5EC4C12B14098A6B00DEAA8D /* Sounds */,
+			);
+			path = SampleAudio;
+			sourceTree = "<group>";
+		};
+		5EC4C12814098A6B00DEAA8D /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C12914098A6B00DEAA8D /* Do You Like Cheese.m4a */,
+				5EC4C12A14098A6B00DEAA8D /* Gremlin.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		5EC4C12B14098A6B00DEAA8D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C14714098A6B00DEAA8D /* convertit.sh */,
+				5EC4C14814098A6B00DEAA8D /* LICENSE.txt */,
+				5EC4C15F14098A6B00DEAA8D /* ui */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5EC4C15F14098A6B00DEAA8D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				5EC4C16014098A6B00DEAA8D /* accept.wav */,
+				5EC4C16114098A6B00DEAA8D /* accept2.wav */,
+				5EC4C16214098A6B00DEAA8D /* click_l.wav */,
+				5EC4C16314098A6B00DEAA8D /* click_s.wav */,
+				5EC4C16414098A6B00DEAA8D /* denied.wav */,
+				5EC4C16514098A6B00DEAA8D /* exclmtn.wav */,
+				5EC4C16614098A6B00DEAA8D /* question.wav */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EC4C0F41408AE3B00DEAA8D /* SoundEngineTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EC4C1161408AE3B00DEAA8D /* Build configuration list for PBXNativeTarget "SoundEngineTest" */;
+			buildPhases = (
+				5EC4C0F11408AE3B00DEAA8D /* Sources */,
+				5EC4C0F21408AE3B00DEAA8D /* Frameworks */,
+				5EC4C0F31408AE3B00DEAA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundEngineTest;
+			productName = SoundEngineTest;
+			productReference = 5EC4C0F51408AE3B00DEAA8D /* SoundEngineTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EC4C0EC1408AE3A00DEAA8D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5EC4C0EF1408AE3A00DEAA8D /* Build configuration list for PBXProject "SoundEngineTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5EC4C0EA1408AE3A00DEAA8D;
+			productRefGroup = 5EC4C0F61408AE3B00DEAA8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EC4C0F41408AE3B00DEAA8D /* SoundEngineTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EC4C0F31408AE3B00DEAA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC4C1041408AE3B00DEAA8D /* InfoPlist.strings in Resources */,
+				5EC4C10D1408AE3B00DEAA8D /* MainWindow.xib in Resources */,
+				5EC4C1131408AE3B00DEAA8D /* SoundEngineTestViewController.xib in Resources */,
+				5EC4C11A1408AF8100DEAA8D /* image.png in Resources */,
+				5EC4C11C1408AF8300DEAA8D /* image@2x.png in Resources */,
+				5EC4C16714098A6B00DEAA8D /* Do You Like Cheese.m4a in Resources */,
+				5EC4C16814098A6B00DEAA8D /* Gremlin.mp3 in Resources */,
+				5EC4C18314098A6B00DEAA8D /* convertit.sh in Resources */,
+				5EC4C18414098A6B00DEAA8D /* LICENSE.txt in Resources */,
+				5EC4C19814098A6B00DEAA8D /* accept.wav in Resources */,
+				5EC4C19914098A6B00DEAA8D /* accept2.wav in Resources */,
+				5EC4C19A14098A6B00DEAA8D /* click_l.wav in Resources */,
+				5EC4C19B14098A6B00DEAA8D /* click_s.wav in Resources */,
+				5EC4C19C14098A6B00DEAA8D /* denied.wav in Resources */,
+				5EC4C19D14098A6B00DEAA8D /* exclmtn.wav in Resources */,
+				5EC4C19E14098A6B00DEAA8D /* question.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EC4C0F11408AE3B00DEAA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC4C1061408AE3B00DEAA8D /* main.m in Sources */,
+				5EC4C10A1408AE3B00DEAA8D /* SoundEngineTestAppDelegate.m in Sources */,
+				5EC4C1101408AE3B00DEAA8D /* SoundEngineTestViewController.m in Sources */,
+				5EC4C1211408B1EA00DEAA8D /* BLSoundEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5EC4C1021408AE3B00DEAA8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EC4C1031408AE3B00DEAA8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5EC4C10B1408AE3B00DEAA8D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EC4C10C1408AE3B00DEAA8D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5EC4C1111408AE3B00DEAA8D /* SoundEngineTestViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EC4C1121408AE3B00DEAA8D /* en */,
+			);
+			name = SoundEngineTestViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EC4C1141408AE3B00DEAA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EC4C1151408AE3B00DEAA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EC4C1171408AE3B00DEAA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundEngineTest/SoundEngineTest-Prefix.pch";
+				INFOPLIST_FILE = "SoundEngineTest/SoundEngineTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5EC4C1181408AE3B00DEAA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundEngineTest/SoundEngineTest-Prefix.pch";
+				INFOPLIST_FILE = "SoundEngineTest/SoundEngineTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EC4C0EF1408AE3A00DEAA8D /* Build configuration list for PBXProject "SoundEngineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC4C1141408AE3B00DEAA8D /* Debug */,
+				5EC4C1151408AE3B00DEAA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EC4C1161408AE3B00DEAA8D /* Build configuration list for PBXNativeTarget "SoundEngineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC4C1171408AE3B00DEAA8D /* Debug */,
+				5EC4C1181408AE3B00DEAA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EC4C0EC1408AE3A00DEAA8D /* Project object */;
+}
