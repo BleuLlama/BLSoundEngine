@@ -1,0 +1,26 @@
+http://creativecommons.org/licenses/by/3.0/us/
+
+You are free:
+
+    * to Share -- to copy, distribute, display, and perform the work
+    * to Remix -- to make derivative works
+
+Under the following conditions:
+
+      Attribution. You must attribute this work to:
+			Scott Lawrence
+			http://umlautllama.com/
+
+      Attribute this work:
+
+	    <div xmlns:cc="http://creativecommons.org/ns#" about="http://jerronimo.livejournal.com/friends"><a rel="cc:attributionURL" property="cc:attributionName" href="http://umlautllama.com">Scott Lawrence</a> / <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">CC BY 3.0</a></div>
+
+    * For any reuse or distribution, you must make clear to others
+    the license terms of this work. The best way to do this is with
+    a link to this web page.
+
+    * Any of the above conditions can be waived if you get permission
+    from the copyright holder.
+
+    * Apart from the remix rights granted under this license, nothing
+    in this license impairs or restricts the author's moral rights.
